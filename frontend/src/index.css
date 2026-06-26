@@ -1,0 +1,588 @@
+:root {
+  --pizzeria-orange: #f3b11f;
+  --pizzeria-dark: #000000;
+  --pizzeria-green: #1a9b2e;
+  --pizzeria-red: #ef2a2a;
+  --border-light: #d5d5d5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ededed;
+  color: #333;
+  font-size: 15px;
+}
+
+/* Navbar */
+.pizzeria-navbar {
+  background-color: #000 !important;
+  padding: 0.5rem 0;
+  border-radius: 3px;
+}
+
+.nav-inner-wrap {
+  max-width: 1220px;
+}
+
+.brand-wrap {
+  border-right: 1px solid #2f2f2f;
+  padding-right: 10px;
+}
+
+.brand-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.brand-text {
+  color: #fff !important;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.nav-link {
+  color: #ccc !important;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.nav-link:hover,
+.active-link {
+  color: #fff !important;
+}
+
+.cart-btn {
+  font-weight: 600 !important;
+  border: none;
+  text-decoration: none;
+  color: #fff !important;
+  background-color: var(--pizzeria-orange) !important;
+  border-radius: 3px !important;
+  padding: 6px 14px !important;
+  font-size: 0.95rem !important;
+}
+
+.cart-btn:hover {
+  background-color: #e08e00 !important;
+  color: #fff !important;
+}
+
+.cart-badge {
+  font-size: 0.7rem;
+  min-width: 20px;
+  min-height: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-caption {
+  color: #243f6d;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.home-page-wrap,
+.order-page-wrap,
+.build-page-wrap,
+.cart-page-wrap {
+  max-width: 1100px !important;
+}
+
+/* Home Page */
+.home-content-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.home-section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1.25rem;
+}
+
+.home-subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 0.75rem;
+}
+
+.home-body-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #6c757d;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.home-divider {
+  border-color: #e9ecef;
+  margin: 1.75rem 0;
+  opacity: 1;
+}
+
+.home-section-row {
+  padding: 0.25rem 0;
+}
+
+.home-section-img {
+  width: 100%;
+  max-height: 260px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.rounded-chef-img {
+  border-radius: 12px !important;
+}
+
+.home-timer-img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.classic-panel {
+  border: 1px solid #e4d2b4;
+  background-color: #fff;
+  padding: 12px 16px 18px;
+}
+
+.classic-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #333;
+}
+
+.classic-subheading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.classic-text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.home-story {
+  padding: 6px 8px 10px;
+}
+
+.classic-row {
+  margin-bottom: 12px;
+}
+
+.classic-img {
+  width: 100%;
+  max-height: 230px;
+  object-fit: cover;
+}
+
+.instruction-text {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Order Pizza */
+.pizza-card {
+  border: 1px solid #bababa !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  margin: -1px 0 0 -1px;
+}
+
+.pizza-card .card-body {
+  padding: 14px;
+}
+
+.pizza-name {
+  font-size: 1.15rem !important;
+  line-height: 1.2;
+  font-weight: 700 !important;
+  margin-bottom: 6px !important;
+}
+
+.pizza-description {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.pizza-meta {
+  font-size: 0.85rem;
+  color: #444;
+}
+
+.price-text {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.pizza-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.add-cart-btn {
+  background-color: var(--pizzeria-orange) !important;
+  border: none !important;
+  color: #fff !important;
+  font-weight: 600;
+  min-width: 120px;
+  border-radius: 3px !important;
+  font-size: 0.9rem !important;
+}
+
+.add-cart-btn:hover {
+  background-color: #e08e00 !important;
+}
+
+/* Veg / Non-Veg Indicator */
+.veg-indicator {
+  position: relative;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid;
+}
+
+.veg-indicator::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.veg-indicator.veg {
+  border-color: var(--pizzeria-green);
+}
+
+.veg-indicator.veg::after {
+  background-color: var(--pizzeria-green);
+}
+
+.veg-indicator.non-veg {
+  border-color: var(--pizzeria-red);
+}
+
+.veg-indicator.non-veg::after {
+  background-color: var(--pizzeria-red);
+}
+
+/* Build Pizza */
+.ingredient-table {
+  background: #fff;
+  width: 560px;
+  margin-bottom: 6px;
+}
+
+.ingredient-table td {
+  padding: 8px 10px !important;
+  vertical-align: middle;
+  font-size: 0.95rem;
+}
+
+.ingredient-img {
+  width: 70px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.add-label {
+  color: var(--pizzeria-orange);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.total-cost {
+  color: #0d6efd;
+  width: 560px;
+  margin: 0 auto;
+  font-size: 1.1rem !important;
+}
+
+.build-btn {
+  background-color: #000 !important;
+  border: none !important;
+  color: var(--pizzeria-orange) !important;
+  font-weight: 700 !important;
+  border-radius: 2px !important;
+  font-size: 1rem !important;
+  padding: 8px 24px !important;
+}
+
+.build-btn:disabled {
+  opacity: 0.5;
+}
+
+/* Cart */
+.cart-content-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.cart-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.cart-card,
+.billing-form-card,
+.billing-card {
+  border: 1px solid #e9ecef !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}
+
+.billing-form-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.billing-input {
+  background-color: #f8f9fa !important;
+  border: 1px solid #dee2e6 !important;
+  border-radius: 6px !important;
+}
+
+.billing-input:focus {
+  background-color: #fff !important;
+  border-color: #adb5bd !important;
+  box-shadow: none !important;
+}
+
+.cart-item-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.cart-card {
+  border: 1px solid var(--border-light) !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}
+
+.cart-item-img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.billing-card {
+  border: 1px solid var(--border-light) !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}
+
+.billing-card .card-body {
+  font-size: 0.95rem;
+}
+
+.ingredients-toggle {
+  cursor: pointer;
+  color: #2f2f2f;
+}
+
+.ingredient-breakdown {
+  padding-left: 0.6rem;
+  border-left: 1px solid #eee;
+}
+
+.quantity-controls .btn {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px !important;
+  font-size: 1rem !important;
+  border: 0 !important;
+  background: #59616b !important;
+}
+
+.pay-btn {
+  background: var(--pizzeria-orange) !important;
+  border: 0 !important;
+  color: #111 !important;
+  font-size: 1rem !important;
+  border-radius: 3px !important;
+}
+
+.clear-btn {
+  background: #1e252d !important;
+  border: 0 !important;
+  font-size: 1rem !important;
+  border-radius: 3px !important;
+}
+
+.footer {
+  background-color: transparent;
+  color: #d69944;
+  font-style: italic;
+  font-size: 0.85rem;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+/* Order Placed Modal */
+.order-placed-modal .modal-content {
+  border-radius: 12px;
+  border: none;
+  padding: 1rem;
+}
+
+.order-placed-body {
+  padding: 2rem 1.5rem !important;
+}
+
+.order-success-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #28a745;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+  font-size: 2rem;
+}
+
+.order-placed-title {
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.order-placed-message {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.order-number-badge {
+  color: #2c3e50;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.order-items-summary {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.order-items-title {
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.order-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 0.9rem;
+}
+
+.order-item-row:last-child {
+  border-bottom: none;
+}
+
+.order-item-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.order-item-qty {
+  color: #666;
+}
+
+.order-item-ingredients {
+  margin-top: 0.25rem;
+}
+
+.custom-ingredients-list {
+  margin-top: 0.35rem;
+}
+
+.custom-ingredients-list .ingredients-label {
+  display: block;
+  font-weight: 600;
+  color: #555;
+  font-size: 0.8rem;
+  margin-bottom: 0.15rem;
+}
+
+.custom-ingredients-list .ingredient-line {
+  color: #666;
+  font-size: 0.8rem;
+  padding-left: 0.5rem;
+}
+
+.order-total-row {
+  border-top: 2px solid #dee2e6;
+  margin-top: 0.25rem;
+  padding-top: 0.75rem;
+  font-weight: 700;
+}
+
+.go-home-btn {
+  background-color: var(--pizzeria-orange) !important;
+  border: none !important;
+  color: #111 !important;
+  font-weight: 600;
+  padding: 0.6rem 2rem !important;
+  border-radius: 6px !important;
+}
+
+@media (max-width: 768px) {
+  .pizza-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .ingredient-table {
+    width: 100%;
+  }
+
+  .total-cost {
+    width: 100%;
+  }
+}
